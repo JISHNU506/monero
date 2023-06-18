@@ -1,0 +1,156 @@
+.additional-div {
+  display: flex;
+  flex-direction: row;
+  width: 88%;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+.container-div {
+  width: 20%;
+}
+
+.container-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #22222b;
+}
+
+.container-content {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.94);
+}
+.container-content p {
+  text-transform: uppercase;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.arrow_right_about {
+  color: #1188bc;
+  font-size: 36px;
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.read-more {
+  margin-top: 10px;
+}
+
+.slider-div {
+  width: 50%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-item {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.slider-image {
+  height: 150px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.slider-heading {
+  font-size: 18px;
+  color: #08254f;
+  margin-bottom: 5px;
+}
+.container-heading span {
+  color: #0582b9;
+}
+
+.slider-content {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.94);
+}
+
+/* slider styles */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  .slider-div {
+    width: 54%;
+  }
+  .slider-image {
+    height: 106px;
+  }
+  .additional-div {
+    width: 100%;
+  }
+  .container-div {
+    width: 25%;
+  }
+  .slider-container {
+    width: 350px;
+  }
+  .content-container span {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-heading {
+    font-size: 18px;
+  }
+  .slider-image {
+    height: 90px;
+  }
+  .container-content {
+    font-size: 12px;
+  }
+  .slider-content {
+    font-size: 12px;
+  }
+  .slider-heading {
+    font-size: 17px;
+  }
+  .additional-div {
+ 
+    margin-top: 0rem;
+}
+}
+
+
+@media only screen and (max-width: 430px) {
+  .additional-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  .container-div {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  .slider-div {
+    width: 100%;
+  }
+  .slider-image {
+    height: 100px;
+}
+  .slider-div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slider-item {
+  margin-right: 20px;
+  width: 60%;
+}
+}

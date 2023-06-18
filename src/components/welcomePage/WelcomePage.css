@@ -1,0 +1,209 @@
+.home {
+  background-image: url("./../../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+  height: 100vh;
+}
+
+.home_Container {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub_header {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+.header_lg {
+  color: #1188bc;
+}
+
+.header_rg {
+  color: #ffff;
+}
+
+.card_Container {
+  width: 60%;
+  margin: auto;
+  height: 9rem;
+  border-radius: 6px;
+  background-color: #ffff;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  bottom: -68px;
+  right: 20%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  color: grey;
+  transition: background-color 0.3s;
+}
+
+.cards:hover {
+  color: #fff;
+  background-color: #1188bc;
+  transform: scale(1.2);
+  border-radius: 6px;
+  transition: transform 0.6s ease, background-color 0.3s;
+}
+
+.arrow_right {
+  font-size: 28px;
+  margin-top: 0.8rem;
+  display: none;
+}
+
+.cards:hover .arrow_right {
+  display: block;
+}
+
+.card_items {
+  font-size: 14px;
+}
+
+.card_sub {
+  font-size: 11px;
+}
+
+.cards::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  background-color: #ccc;
+  right: 0;
+  top: 25%;
+}
+.cards:last-child::after {
+  display: none;
+}
+#images {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.img_Sec1 {
+  background-image: url("./../../Icons/key.png");
+}
+
+.img_Sec2 {
+  background-image: url("./../../Icons/add.png");
+}
+
+.img_Sec3 {
+  background-image: url("./../../Icons/shield.png");
+}
+
+.img_Sec4 {
+  background-image: url("./../../Icons/browser-\(1\).png");
+}
+
+.img_Sec5 {
+  background-image: url("./../../Icons/password\ \(2\).png");
+}
+
+.cards:hover .img_Sec1 {
+  background-image: url("./../../Icons/white/key.png");
+}
+
+.cards:hover .img_Sec2 {
+  background-image: url("./../../Icons/white/add.png");
+}
+
+.cards:hover .img_Sec3 {
+  background-image: url("./../../Icons/white/shield.png");
+}
+
+.cards:hover .img_Sec4 {
+  background-image: url("./../../Icons/white/browser\ \(1\).png");
+}
+
+.cards:hover .img_Sec5 {
+  background-image: url("./../../Icons/white/password-\(2\).png");
+}
+
+@media screen and (max-width: 768px) {
+  .card_Container {
+    width: 90%;
+    right: 5%;
+  }
+
+  .cards {
+    width: 50%;
+  }
+
+  .sub_header {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card_Container {
+    width: 95%;
+    right: 2%;
+    height: 6rem;
+  }
+
+  .cards {
+    width: 20%;
+  }
+
+  .sub_header {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+  .card_items {
+    font-size: 10px;
+  }
+  .card_sub {
+    font-size: 8px;
+  }
+  #images {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card_Container {
+    width: 98%;
+    right: 1%;
+    height: 5rem;
+    bottom: 92px;
+  }
+  .card_items {
+    font-size: 8px;
+  }
+  .home {
+    height: 80vh;
+  }
+}
